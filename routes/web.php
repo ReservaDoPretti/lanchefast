@@ -4,7 +4,6 @@ use App\Livewire\Produto\ProdutoCreate;
 use App\Livewire\Produto\ProdutoEdit;
 use App\Livewire\Produto\ProdutoIndex;
 use App\Livewire\Produto\ProdutoShow;
-use App\Models\Produto;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('clientes')->group(function () {
