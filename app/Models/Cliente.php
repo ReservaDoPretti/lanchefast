@@ -14,7 +14,8 @@ class Cliente extends Model
         'endereco',
         'telefone',
         'cpf',
-        'email'
+        'email',
+        'senha'
     ];
 
     protected $hidden = [
