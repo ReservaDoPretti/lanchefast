@@ -15,10 +15,11 @@ use App\Livewire\Produto\ProdutoIndex;
 use App\Livewire\Produto\ProdutoShow;
 
 Route::prefix('clientes')->group(function () {
-    Route::get('/', ClienteIndex::class)->name('clientes.index');
-    Route::get('/create', ClienteCreate::class)->name('clientes.create');
-    Route::get('/{cliente}', ClienteShow::class)->name('clientes.show');
-    Route::get('/{cliente}/edit', ClienteEdit::class)->name('clientes.edit');
+
+    Route::get('/', \App\Livewire\Clientes\Index::class)->name('clientes.index');
+    Route::get('/create', \App\Livewire\Clientes\Create::class)->name('clientes.create');
+    Route::get('/{cliente}', \App\Livewire\Clientes\Show::class)->name('clientes.show');  
+    Route::get('/{cliente}/edit', \App\Livewire\Clientes\Edit::class)->name('clientes.edit');
 });
 
 Route::prefix('produtos')->group(function () {
