@@ -30,4 +30,7 @@ Route::prefix('produtos')->group(function () {
 });
 
 
+
 Route::get('/pedidos/create', \App\Livewire\Pedido\PedidoCreate::class);
+Route::get('/pedidos', \App\Livewire\Pedido\PedidoIndex::class)->name('pedidos.index');
+
