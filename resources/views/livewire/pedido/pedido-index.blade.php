@@ -1,5 +1,10 @@
 <div class="container mt-4">
-    <h2><i class="bi bi-receipt"></i> Lista de Pedidos</h2>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2><i class="bi bi-receipt"></i> Lista de Pedidos</h2>
+        <a href="{{ route('pedidos.create') }}" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Novo Pedido
+        </a>
+    </div>
 
     <table class="table table-hover mt-3">
         <thead class="table-dark">
