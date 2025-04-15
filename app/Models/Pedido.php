@@ -8,14 +8,18 @@ class Pedido extends Model
 {
     
     protected $fillable = [
-        'cliente_id',
-        'descricao',
-        'valor_total',
+        'cliente_id', 'valor_total', 'valor_desconto',
+        'forma_pagamento', 'status'
     ];
 
     public function cliente()
-{
-    return $this->belongsTo(Cliente::class);
-}
+    {
+        return $this->belongsTo(Cliente::class);
+    }
+
+    public function itens()
+    {
+        return $this->hasMany(ItemPedido::class);
+    }
 
 }
