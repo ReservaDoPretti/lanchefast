@@ -28,3 +28,5 @@ Route::prefix('produtos')->group(function () {
     Route::get('/{produto}', ProdutoShow::class)->name('produtos.show');
     Route::get('/{produto}/edit', ProdutoEdit::class)->name('produtos.edit');
 });
+
+Route::get('/pedidos', \App\Livewire\Pedido\PedidoIndex::class)->name('pedidos.index');
